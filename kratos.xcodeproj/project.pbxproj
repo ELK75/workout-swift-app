@@ -13,6 +13,13 @@
 		4541687F24FCA098006ED15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4541687E24FCA098006ED15A /* Assets.xcassets */; };
 		4541688224FCA098006ED15A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4541688124FCA098006ED15A /* Preview Assets.xcassets */; };
 		4541688524FCA098006ED15A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4541688324FCA098006ED15A /* LaunchScreen.storyboard */; };
+		4541688E24FCA612006ED15A /* RecordedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541688D24FCA612006ED15A /* RecordedWorkout.swift */; };
+		4541689024FEA705006ED15A /* BeginWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541688F24FEA705006ED15A /* BeginWorkout.swift */; };
+		4541689524FEFBD2006ED15A /* GenericButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541689424FEFBD2006ED15A /* GenericButton.swift */; };
+		4541689724FF010A006ED15A /* CreateWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541689624FF010A006ED15A /* CreateWorkoutScreen.swift */; };
+		4541689924FF045E006ED15A /* WorkoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541689824FF045E006ED15A /* WorkoutList.swift */; };
+		459598A125070C3A001A48AC /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459598A025070C3A001A48AC /* ButtonStyles.swift */; };
+		459598A425098329001A48AC /* TextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459598A325098329001A48AC /* TextBindingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4541688124FCA098006ED15A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4541688424FCA098006ED15A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4541688624FCA098006ED15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4541688D24FCA612006ED15A /* RecordedWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedWorkout.swift; sourceTree = "<group>"; };
+		4541688F24FEA705006ED15A /* BeginWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWorkout.swift; sourceTree = "<group>"; };
+		4541689424FEFBD2006ED15A /* GenericButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericButton.swift; sourceTree = "<group>"; };
+		4541689624FF010A006ED15A /* CreateWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutScreen.swift; sourceTree = "<group>"; };
+		4541689824FF045E006ED15A /* WorkoutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutList.swift; sourceTree = "<group>"; };
+		459598A025070C3A001A48AC /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		459598A325098329001A48AC /* TextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +73,9 @@
 				4541687824FCA093006ED15A /* AppDelegate.swift */,
 				4541687A24FCA093006ED15A /* SceneDelegate.swift */,
 				4541687C24FCA093006ED15A /* ContentView.swift */,
+				4541688C24FCA5FA006ED15A /* Views */,
 				4541687E24FCA098006ED15A /* Assets.xcassets */,
+				459598A225098311001A48AC /* Controller */,
 				4541688324FCA098006ED15A /* LaunchScreen.storyboard */,
 				4541688624FCA098006ED15A /* Info.plist */,
 				4541688024FCA098006ED15A /* Preview Content */,
@@ -73,6 +89,43 @@
 				4541688124FCA098006ED15A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4541688C24FCA5FA006ED15A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4595989F25070BFC001A48AC /* Styles */,
+				4541689124FEA8A5006ED15A /* Components */,
+				4541688D24FCA612006ED15A /* RecordedWorkout.swift */,
+				4541688F24FEA705006ED15A /* BeginWorkout.swift */,
+				4541689624FF010A006ED15A /* CreateWorkoutScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4541689124FEA8A5006ED15A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4541689424FEFBD2006ED15A /* GenericButton.swift */,
+				4541689824FF045E006ED15A /* WorkoutList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4595989F25070BFC001A48AC /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				459598A025070C3A001A48AC /* ButtonStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		459598A225098311001A48AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				459598A325098329001A48AC /* TextBindingManager.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +201,14 @@
 			files = (
 				4541687924FCA093006ED15A /* AppDelegate.swift in Sources */,
 				4541687B24FCA093006ED15A /* SceneDelegate.swift in Sources */,
+				459598A425098329001A48AC /* TextBindingManager.swift in Sources */,
+				4541688E24FCA612006ED15A /* RecordedWorkout.swift in Sources */,
+				4541689924FF045E006ED15A /* WorkoutList.swift in Sources */,
+				459598A125070C3A001A48AC /* ButtonStyles.swift in Sources */,
+				4541689524FEFBD2006ED15A /* GenericButton.swift in Sources */,
 				4541687D24FCA093006ED15A /* ContentView.swift in Sources */,
+				4541689024FEA705006ED15A /* BeginWorkout.swift in Sources */,
+				4541689724FF010A006ED15A /* CreateWorkoutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
